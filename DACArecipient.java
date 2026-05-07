@@ -25,10 +25,10 @@ public class DACArecipient
 	private String givenName;
 	private String uscisNumber;
 	private String countryOfOrigin;
-	private String birthday;
-	private String validFromDate;
-	private String expirationDate;
-	private String sex;
+	private int birthday;
+	private int validFromDate;
+	private int expirationDate;
+	private char sex;
 
 
 public String getSurname()
@@ -63,27 +63,27 @@ public void setSurname (String surname){
 	    return this.countryOfOrigin;
 	
 	}
-	public String getBirthday(){
+	public int getBirthday(){
 	
 	    return this.birthday;
 	
 	}
-	public String getValidFromDate(){
+	public int getValidFromDate(){
 	
 	    return this.validFromDate;
 	
 	}
-	public String getExpirationDate(){	
+	public int getExpirationDate(){	
 			
 	    return this.expirationDate;
 	
 	}	
-	public String getSex(){
+	public char getSex(){
 	
 	    return this.sex;
 	}
 
-public void setAll(String surname, String givenName, String uscisNumber, String countryOfOrigin, String birthday, String validFromDate, String expirationDate, String sex) {
+public void setAll(String surname, String givenName, String uscisNumber, String countryOfOrigin, int birthday, int validFromDate, int expirationDate, char sex) {
 	
 	this.surname = surname; // or setSurname(surname);
 	this.givenName = givenName;
@@ -98,10 +98,10 @@ public void setAll(String surname, String givenName, String uscisNumber, String 
 	givenName = "Nery";
 	uscisNumber = "12-4-789";
 	countryOfOrigin = "Guatemala";
-	birthday = "2451564";
-	validFromDate = "3956753";
-	expirationDate = "3956840";
-	sex = "M";
+	birthday = 2451564;
+	validFromDate = 3956753;
+	expirationDate = 3956840;
+	sex = 'M';
 	}
 
 	

@@ -18,7 +18,7 @@ class Main
     DACArecipient recipient1 = new DACArecipient();
     System.out.println("Person 1");
     System.out.println("-----------------------------");
-    recipient1.setAll("Chapeton-Lamas", "Nery", "12-4-789", "Guatemala", "2451564", "3956753", "3956840", "M");
+    recipient1.setAll("Chapeton-Lamas", "Nery", "12-4-789", "Guatemala", 2451564, 3956753, 3956840, 'M');
     System.out.println("surname: " + recipient1.getSurname());
     System.out.println("given name: " + recipient1.getGivenName());
     System.out.println("USCIS number: " + recipient1.getUscisNumber());
