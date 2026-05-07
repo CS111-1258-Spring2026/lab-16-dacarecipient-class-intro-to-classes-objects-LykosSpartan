@@ -41,10 +41,39 @@ public String getSurname()
 
 public void setSurname (String surname){
 		this.surname = surname;
+	}
+
+	public void setGivenName(String givenName){
+		this.givenName = givenName;
+	}
+
+	public void setUscisNumber(String uscisNumber){
+		this.uscisNumber = uscisNumber;
+	}
+
+	public void setCountryOfOrigin(String countryOfOrigin){
+		this.countryOfOrigin = countryOfOrigin;
+	}
+
+	public void setBirthday(int birthday){
+		this.birthday = birthday;
+	}
+
+	public void setValidFromDate(int validFromDate){
+		this.validFromDate = validFromDate;
+	}
+
+	public void setExpirationDate(int expirationDate){
+		this.expirationDate = expirationDate;
+	}
+
+	public void setSex(char sex){
+		this.sex = sex;
+	}
+
 	/***** MUTATORS *****/
 
 	//TODO: Write the setter for each instance variable. Remember to include documentation for each method.
-	}
 
 	public String getGivenName(){
 	
@@ -83,9 +112,10 @@ public void setSurname (String surname){
 	    return this.sex;
 	}
 
-public void setAll(String surname, String givenName, String uscisNumber, String countryOfOrigin, int birthday, int validFromDate, int expirationDate, char sex) {
+public void setAll(String surname, String givenName, String uscisNumber, String countryOfOrigin, 
+	int birthday, int validFromDate, int expirationDate, char sex) {
 	
-	this.surname = surname; // or setSurname(surname);
+	this.surname = surname;
 	this.givenName = givenName;
 	this.uscisNumber = uscisNumber;
 	this.countryOfOrigin = countryOfOrigin;
@@ -93,15 +123,6 @@ public void setAll(String surname, String givenName, String uscisNumber, String 
 	this.validFromDate = validFromDate;
 	this.expirationDate = expirationDate;
 	this.sex = sex;
-	//TODO: Write the setAll method. Remember to include documentation.
-	surname = "Chapeton-Lamas";
-	givenName = "Nery";
-	uscisNumber = "12-4-789";
-	countryOfOrigin = "Guatemala";
-	birthday = 2451564;
-	validFromDate = 3956753;
-	expirationDate = 3956840;
-	sex = 'M';
 	}
 
 	
